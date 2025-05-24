@@ -12,7 +12,12 @@ var isEating = false;
 var gifts = 0;
 var unityConnected = false;
 
+
+
 socket.on('connect', () =>{
+    document.getElementById('tempConnected').style.display = 'flex';
+    document.getElementById('tempUnconnected').style.display = 'none';
+    
     //cSetUsernameCondition();
     console.log("Joined");
 
@@ -154,10 +159,16 @@ document.getElementById('feedButton').onclick = () =>
 }
 
 // document.getElementById('sendButton2').onclick = () =>{
-//     const text = document.getElementById('inputText').value;
-//     socket.emit('message',text);
-//     console.log(text);
+//     console.log ('hidden');
+//     document.getElementById('head').hidden = true;
 // }
+document.getElementById('start').onclick = () =>{
+
+    document.getElementById('start').style.display = 'none';
+    document.getElementById('head').style.display = 'block';
+    chatLog = document.getElementById("chatLog");
+    chatLog.scrollTop = chatLog.scrollHeight;
+}
 
 
 // document.getElementById('username-button').onclick = () =>
