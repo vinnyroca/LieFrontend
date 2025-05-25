@@ -203,6 +203,22 @@
         display: none;
       }
 
+       .info{
+    display: none;
+    filter: blur(1px);
+    width: 90%;
+   }
+   .about{
+    display: flex;
+   
+    width: 90%;
+   }
+   a{
+      color: #ffffff;
+    }
+    
+         
+
     @media only screen and (max-width: 600px)
     {
       /* .c
@@ -265,6 +281,7 @@
       line-height: 20px;
       padding-bottom: 10px;
     }
+    
 
     .button-row
     {
@@ -326,8 +343,7 @@
     .eye{
       width: 50%;
     }
-   
-            
+     
             
           
          
@@ -342,20 +358,21 @@
   <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body >
-   <div  class = "m" style=" justify-content: center; align-items: center;  place-items: center; padding-top: 20px" >
+   <div  class = "m" style=" justify-content: center; align-items: center;  place-items: center; padding-top: 50px" >
       <div  style="display: flex; flex-direction: column; text-align: center; justify-items: center; ">
       <span style="filter: blur(1px);">REAL THINGS, EVERYWHERE</span>
       <span style="filter: blur(1px);">IS UNABLE TO CONNECT ON MOBILE</span>
     </div>
   </div>
 
-  <div  class = "t" id = tempHead style=" justify-content: center; align-items: center;  place-items: center; padding-top: 20px" >
+  <div  class = "t" id = tempHead style=" justify-content: center; align-items: center;  place-items: center; padding-top: 50px" >
   <div id = tempConnected style="display: flex; flex-direction: column; text-align: center; justify-items: center; display: none; " >
-    <button class = 'Button' id = 'start' >REAL THINGS, EVERYWHERE</button>
+    
+    <button class = 'Button' id = 'start' style="text-decoration: underline;" >REAL THINGS, EVERYWHERE</button>
   </div> 
 
   <div id = tempUnconnected style="display: flex; flex-direction: column; text-align: center; justify-items: center; ">
-    <span style="filter: blur(1px);">CHECKING CONNECTION</span>
+    <span style="filter: blur(1px);">CONNECTING TO REAL THINGS, EVERYWHERE</span>
   </div>
   </div>
 
@@ -427,6 +444,29 @@
 
       </div>
     </div>
+  <div class = "i" id = "infoHead" style="flex-direction: column; justify-content: center; align-items: center;  place-items: center; padding-top: 20px">
+    <div  class = "about"  id = "about" style=" flex-direction: column; justify-content: center; align-items: center;  place-items: center; padding-top: 20px; " >
+      <div  style="display: flex; flex-direction: column; text-align: center; justify-items: center; ">
+       <button class = "Button" id = "aboutButton" style="text-decoration: underline;"> ABOUT</button>
+      </div>
+    </div>
+    
+    <div  class = "info" id = "info" style=" flex-direction: column; justify-content: center; align-items: center; text-align: center; place-items: center; padding-top: 20px" >
+      <div  style="display: flex; flex-direction: column; gap: 10px; ">
+       <span> PROJECT BY <a href="https://vinnyroca.info/">VINNY ROCA</a> </span>
+        <span>FOR <a href="https://nowherelab.xyz/">NOWHERE LAB,</a> UC SANTA CRUZ</span>
+      <span style="color: #ffffff;">THANK YOU TO <a href="https://www.aidanstrong.info/"> AIDAN STRONG</a>   FOR HELPING WITH NETWORK CODE</span>
+        
+     
+      <span>LOVE IS EVERYWHERE, PHAROAH SANDERS </span>
+        <span>THANK YOU TO AUX DJ, <a href="https://ren.works/information-%E2%80%94-mobile">REN BURCH</a></span>
+      </div>
+    </div>
+    
+  
+  </div>
+  
+  
    
  <div  hidden id= "hungry" style="position: absolute; bottom: 10px; right: 10px;">xxx</div>
  <div  hidden id= "hasAccepted" style="position: absolute; bottom: 10px; right: 100px;">yyy</div>

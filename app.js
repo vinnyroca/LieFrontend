@@ -175,10 +175,15 @@ document.getElementById('feedButton').onclick = () =>
 //     console.log ('hidden');
 //     document.getElementById('head').hidden = true;
 // }
+document.getElementById('aboutButton').onclick = () =>{
+    document.getElementById('about').style.display = 'none';
+    document.getElementById('info').style.display = 'flex';
+}
 document.getElementById('start').onclick = () =>{
 
     document.getElementById('start').style.display = 'none';
     document.getElementById('head').style.display = 'block';
+    document.getElementById('infoHead').style.display = 'none';
     chatLog = document.getElementById("chatLog");
     chatLog.scrollTop = chatLog.scrollHeight;
 }
