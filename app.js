@@ -62,7 +62,7 @@ socket.on('time', timeServer =>{
     updateTime = true;
 });
 socket.on('foodButton', hungry =>{
-    console.log("food button is "+ hungry);
+   // console.log("food button is "+ hungry);
     if(hungry){
         isHungry = true;
         document.getElementById('hungry').innerHTML = "htrue";
@@ -101,6 +101,7 @@ socket.on('foodAccepted', accepted =>{
     
 });
 socket.on('eating', eating =>{
+    console.log("b"+isHungry+"f"+foodAccepted+"e"+isEating);
     if(eating){
         isEating = true;
         document.getElementById('eating').innerHTML = " etrue";

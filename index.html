@@ -4,7 +4,8 @@
   <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LIE</title>
+  <title>REAL THINGS, EVERYWHERE</title>
+  <link rel = "icon" type = "image/x-icon" href = "favicon.jpg">
 <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
   <style>
     /* body{margin:0} */
@@ -180,7 +181,7 @@
   }
            
 .centerbuttonrow{ 
-      width: 200px; 
+      width: 00px; 
       background-color: rgb(0, 0, 0); 
       height: 30px;
       display: flex;
@@ -195,10 +196,26 @@
               align-items: center;
                justify-content: end;           
         }
+        .t{
+          display: flex;
+        }
+         .m{
+        display: none;
+      }
 
     @media only screen and (max-width: 600px)
     {
-        body{
+      .c
+      {
+        display: none;
+      }
+      .t{
+        display: none;
+      }
+      .m{
+        display: flex;
+      }
+        /* body{
           background-color: rgb(0, 0, 0);
         }
         .unity{
@@ -212,15 +229,13 @@
         justify-content: center;
         display: flex;
         flex-direction: column; 
-        /* gap: 10px; */
-        /* padding-top: 10px; */
+   
         
 
       }
       .chat-log {
         filter: blur(1px);
-        /* background: #3c3c3c;  */
-        /* border: 1px solid #ffffff; */
+     
         width:100%; 
         padding-top: 40px;
         padding-left: 20px;
@@ -235,9 +250,9 @@
       .Header
       {
       filter: blur(1px);
-      /* border: 1px solid #181818; */
+   
       vertical-align: middle;
-      /* background: #3a3a3a;  */
+
       display: flex;
       align-items:center;
       justify-content: space-between;
@@ -253,12 +268,12 @@
     {
       position:fixed; bottom: 10px;
       filter: blur(1px);
-      /* border: 1px solid #181818; */
+   
       display: flex;
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      /* background: #333;  */
+    
       gap: 10px;
       height: 30px;
     }
@@ -294,7 +309,7 @@
              display: flex;
               align-items: center;
                justify-content: end;           
-        }
+        } */
 
    
             
@@ -312,9 +327,16 @@
   <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body >
-  <div  id = tempHead style="display: flex; justify-content: center; align-items: center;  place-items: center; padding-top: 20px" >
+   <div  class = "m" style=" justify-content: center; align-items: center;  place-items: center; padding-top: 20px" >
+      <div  style="display: flex; flex-direction: column; text-align: center; justify-items: center; ">
+      <span style="filter: blur(1px);">REAL THINGS, EVERYWHERE</span>
+      <span style="filter: blur(1px);">IS UNABLE TO CONNECT ON MOBILE</span>
+    </div>
+  </div>
+
+  <div  class = "t" id = tempHead style=" justify-content: center; align-items: center;  place-items: center; padding-top: 20px" >
   <div id = tempConnected style="display: flex; flex-direction: column; text-align: center; justify-items: center; display: none; " >
-    <button class = 'Button' id = 'start'>REAL THINGS, EVERYWHERE</button>
+    <button class = 'Button' id = 'start' >REAL THINGS, EVERYWHERE</button>
   </div> 
 
   <div id = tempUnconnected style="display: flex; flex-direction: column; text-align: center; justify-items: center; ">
@@ -361,7 +383,7 @@
             
             <div class = 'centerbuttonrow' >
               <button   hidden id="feedButton" class ="Button" >FEED</button>
-              
+             
             </div>
             
             <div class = 'rightbuttonrow' >
