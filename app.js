@@ -11,6 +11,7 @@ var foodAccepted = false;
 var isEating = false;
 var gifts = 0;
 var unityConnected = false;
+var eye = 1;
 
 
 
@@ -21,6 +22,17 @@ socket.on('connect', () =>{
     //cSetUsernameCondition();
     console.log("Joined");
 
+});
+socket.on('eye', eye => {
+    if(eye == 1)
+    {
+        document.getElementById('eye').innerHTML = eye + " IS HERE";       
+    }
+    else
+    {
+        document.getElementById('eye').innerHTML = eye + " ARE HERE";       
+    }
+    
 });
 socket.on('messageRefresh', messageArray => {
     console.log(messageArray);
