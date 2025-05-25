@@ -205,7 +205,7 @@
 
     @media only screen and (max-width: 600px)
     {
-      .c
+      /* .c
       {
         display: none;
       }
@@ -214,8 +214,8 @@
       }
       .m{
         display: flex;
-      }
-        /* body{
+      } */
+        body{
           background-color: rgb(0, 0, 0);
         }
         .unity{
@@ -229,20 +229,22 @@
         justify-content: center;
         display: flex;
         flex-direction: column; 
+        gap: 10px;
    
         
 
       }
       .chat-log {
         filter: blur(1px);
-     
-        width:100%; 
-        padding-top: 40px;
+        
+        width:95%; 
+        /* padding-top: 40px; */
         padding-left: 20px;
-        height: 250px;
+        height: 150px;
         overflow-y: auto;
         white-space: wrap;
         position: relative ; top:0;
+      
         scrollbar-color: rgba(27, 27, 27, 0.53) rgb(0, 0, 0);
         scrollbar-width:thin;
 
@@ -272,7 +274,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 100%;
+      width: 50%;
     
       gap: 10px;
       height: 30px;
@@ -309,7 +311,7 @@
              display: flex;
               align-items: center;
                justify-content: end;           
-        } */
+        }
 
    
             
@@ -383,6 +385,8 @@
             
             <div class = 'centerbuttonrow' >
               <button   hidden id="feedButton" class ="Button" >FEED</button>
+            
+             
              
             </div>
             
